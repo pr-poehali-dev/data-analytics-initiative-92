@@ -1,5 +1,6 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const container = useRef<HTMLDivElement>(null);
@@ -36,14 +37,20 @@ export default function Hero() {
         <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90 mb-10">
           Более 20 цветов для идеальных швов. Профессиональное качество Perel — для домов, которые восхищают.
         </p>
-        <a
-          href="https://perelshop.ru/tsvetnyye-kladochnyye-smesi/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-white text-black px-8 py-3 text-sm uppercase tracking-wide font-semibold transition-all duration-300 hover:bg-neutral-200"
-        >
-          Смотреть каталог
-        </a>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            to="/catalog"
+            className="inline-block bg-white text-black px-8 py-3 text-sm uppercase tracking-wide font-semibold transition-all duration-300 hover:bg-neutral-200"
+          >
+            Смотреть каталог
+          </Link>
+          <a
+            href="#contact-form"
+            className="inline-block border border-white text-white px-8 py-3 text-sm uppercase tracking-wide font-semibold transition-all duration-300 hover:bg-white hover:text-black"
+          >
+            Получить консультацию
+          </a>
+        </div>
       </div>
     </div>
   );
