@@ -19,19 +19,31 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full"
       >
         <img
-          src="/images/mountain-landscape.jpg"
-          alt="Mountain landscape"
+          src="https://cdn.poehali.dev/projects/9bd55018-b4bf-4753-b863-82368c29cdc4/files/0a60de48-bd02-4bdb-8160-c07072d2cccd.jpg"
+          alt="Кирпичный фасад с цветными кладочными швами"
           className="w-full h-full object-cover"
         />
+        <div className="absolute inset-0 bg-black/50" />
       </motion.div>
 
-      <div className="relative z-10 text-center text-white">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
-          ОТКРОЙ
-        </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90">
-          Исследуй границы дизайна с иммерсивным параллакс-эффектом
+      <div className="relative z-10 text-center text-white px-6">
+        <p className="text-xs md:text-sm uppercase tracking-[0.3em] mb-4 opacity-70">
+          Официальный дилер Perel
         </p>
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 leading-tight">
+          ЦВЕТНЫЕ<br />КЛАДОЧНЫЕ<br />СМЕСИ
+        </h1>
+        <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90 mb-10">
+          Более 20 цветов для идеальных швов. Профессиональное качество Perel — для домов, которые восхищают.
+        </p>
+        <a
+          href="https://perelshop.ru/tsvetnyye-kladochnyye-smesi/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-white text-black px-8 py-3 text-sm uppercase tracking-wide font-semibold transition-all duration-300 hover:bg-neutral-200"
+        >
+          Смотреть каталог
+        </a>
       </div>
     </div>
   );
