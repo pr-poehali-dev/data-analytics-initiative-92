@@ -30,10 +30,10 @@ export default function Footer() {
               <div className="flex flex-col gap-1 sm:gap-2">
                 <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">Контакты</h3>
                 <a
-                  href="tel:+74951234567"
+                  href="tel:+79381736470"
                   className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
                 >
-                  Позвонить
+                  +7 938 173-64-70
                 </a>
                 <a
                   href="https://perelshop.ru/"
