@@ -54,9 +54,11 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 sm:gap-0">
-              <h1 className="text-[18vw] sm:text-[16vw] lg:text-[14vw] leading-[0.8] mt-4 sm:mt-6 lg:mt-10 text-white font-bold tracking-tight">
-                PEREL
-              </h1>
+              <img
+                src="https://perelshop.ru/image/catalog/logoot.jpg"
+                alt="Perel"
+                className="mt-4 sm:mt-6 lg:mt-10 h-16 sm:h-20 lg:h-24 w-auto object-contain"
+              />
               <p className="text-white text-sm sm:text-base opacity-50">{new Date().getFullYear()} Официальный дилер Perel</p>
             </div>
           </div>

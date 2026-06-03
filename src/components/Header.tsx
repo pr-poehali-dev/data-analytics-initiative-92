@@ -8,8 +8,12 @@ export default function Header({ className }: HeaderProps) {
   return (
     <header className={`absolute top-0 left-0 right-0 z-10 p-6 ${className ?? ""}`}>
       <div className="flex justify-between items-center">
-        <Link to="/" className="text-white text-sm uppercase tracking-widest font-semibold hover:text-neutral-300 transition-colors">
-          Perel
+        <Link to="/" className="hover:opacity-80 transition-opacity">
+          <img
+            src="https://perelshop.ru/image/catalog/logoot.jpg"
+            alt="Perel"
+            className="h-8 w-auto object-contain"
+          />
         </Link>
         <nav className="flex gap-8">
           <Link

@@ -95,7 +95,7 @@ export default function Catalog() {
           <Icon name="ArrowLeft" size={16} />
           На главную
         </Link>
-        <span className="text-sm uppercase tracking-widest font-semibold">Perel</span>
+        <img src="https://perelshop.ru/image/catalog/logoot.jpg" alt="Perel" className="h-7 w-auto object-contain" />
       </div>
 
       {/* Hero */}
