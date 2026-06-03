@@ -1,0 +1,22 @@
+{
+  "tests": [
+    {
+      "name": "Отправка заявки",
+      "method": "POST",
+      "path": "/",
+      "body": { "name": "Иван Иванов", "phone": "+79001234567", "message": "Нужна серая смесь" },
+      "expectedStatus": 200,
+      "expectedBody": { "ok": true },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Ошибка без телефона",
+      "method": "POST",
+      "path": "/",
+      "body": { "name": "Иван" },
+      "expectedStatus": 400,
+      "bodyMatcher": "partial",
+      "expectedBody": { "error": "Имя и телефон обязательны" }
+    }
+  ]
+}
