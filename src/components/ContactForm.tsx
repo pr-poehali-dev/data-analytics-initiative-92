@@ -2,10 +2,14 @@ import { useState } from "react";
 
 const SUBMIT_URL = "https://functions.poehali.dev/71433ab5-1185-4543-9213-7c051f0f62b5";
 
-export default function ContactForm() {
+interface ContactFormProps {
+  initialMessage?: string;
+}
+
+export default function ContactForm({ initialMessage = "" }: ContactFormProps) {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState(initialMessage);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Icon from "@/components/ui/icon";
+import OrderModal from "@/components/OrderModal";
 
 interface Product {
   id: string;
@@ -77,6 +78,7 @@ const SERIES_DESC: Record<string, string> = {
 export default function Catalog() {
   const [activeSeries, setActiveSeries] = useState("Все");
   const [search, setSearch] = useState("");
+  const [orderProduct, setOrderProduct] = useState<Product | null>(null);
 
   const filtered = PRODUCTS.filter((p) => {
     const matchSeries = activeSeries === "Все" || p.series === activeSeries;
@@ -148,11 +150,8 @@ export default function Catalog() {
         ) : (
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
             {filtered.map((product) => (
-              <a
+              <div
                 key={product.id}
-                href={product.url}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="group border border-neutral-200 hover:border-black transition-all duration-200 flex flex-col"
               >
                 {/* Color swatch */}
@@ -180,14 +179,21 @@ export default function Catalog() {
                   <p className="text-xs text-neutral-400">{product.weight}</p>
                   <div className="mt-auto pt-2 flex items-center justify-between">
                     <p className="text-sm font-bold text-neutral-900">{product.price} ₽</p>
-                    <Icon name="ExternalLink" size={12} className="text-neutral-300 group-hover:text-black transition-colors" />
                   </div>
+                  <button
+                    onClick={() => setOrderProduct(product)}
+                    className="mt-2 w-full bg-black text-white text-xs uppercase tracking-wide py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 hover:bg-neutral-800"
+                  >
+                    Заказать
+                  </button>
                 </div>
-              </a>
+              </div>
             ))}
           </div>
         )}
       </div>
+
+      <OrderModal product={orderProduct} onClose={() => setOrderProduct(null)} />
 
       {/* CTA */}
       <div className="bg-neutral-100 px-6 py-16 text-center">
