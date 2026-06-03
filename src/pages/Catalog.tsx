@@ -15,17 +15,21 @@ interface Product {
 }
 
 const PRODUCTS: Product[] = [
-  // Серия SL — стандартная линейка
-  { id: "sl-00", series: "SL", name: "Perel SL Белый", color: "Белый", hex: "#F5F5F0", weight: "25 кг", price: 890, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/" },
-  { id: "sl-01", series: "SL", name: "Perel SL Светло-серый", color: "Светло-серый", hex: "#C8C8C8", weight: "25 кг", price: 890, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/" },
-  { id: "sl-02", series: "SL", name: "Perel SL Серый", color: "Серый", hex: "#8C8C8C", weight: "25 кг", price: 890, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/" },
-  { id: "sl-03", series: "SL", name: "Perel SL Антрацит", color: "Антрацит", hex: "#3A3A3A", weight: "25 кг", price: 920, tag: "Популярный", url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/" },
-  { id: "sl-04", series: "SL", name: "Perel SL Чёрный", color: "Чёрный", hex: "#1A1A1A", weight: "25 кг", price: 950, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/" },
-  { id: "sl-05", series: "SL", name: "Perel SL Бежевый", color: "Бежевый", hex: "#D9C9A8", weight: "25 кг", price: 890, tag: "Популярный", url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/" },
-  { id: "sl-06", series: "SL", name: "Perel SL Жёлто-бежевый", color: "Жёлто-бежевый", hex: "#D4B878", weight: "25 кг", price: 890, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/" },
-  { id: "sl-07", series: "SL", name: "Perel SL Терракот", color: "Терракот", hex: "#B5563A", weight: "25 кг", price: 920, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/" },
-  { id: "sl-08", series: "SL", name: "Perel SL Коричневый", color: "Коричневый", hex: "#7A4A2A", weight: "25 кг", price: 920, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/" },
-  { id: "sl-09", series: "SL", name: "Perel SL Тёмно-коричневый", color: "Тёмно-коричневый", hex: "#4A2A10", weight: "25 кг", price: 950, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/" },
+  // Серия SL — 14 цветов, водопоглощение кирпича 5–12%
+  { id: "sl-0005", series: "SL", name: "Perel SL 0005", color: "Белый", hex: "#F2F0EB", weight: "25 кг", price: 870, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/perel-sl/" },
+  { id: "sl-0010", series: "SL", name: "Perel SL 0010", color: "Светло-серый", hex: "#D0CECC", weight: "25 кг", price: 870, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/perel-sl/" },
+  { id: "sl-0015", series: "SL", name: "Perel SL 0015", color: "Серый", hex: "#969490", weight: "25 кг", price: 870, tag: "Популярный", url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/perel-sl/" },
+  { id: "sl-0020", series: "SL", name: "Perel SL 0020", color: "Тёмно-серый", hex: "#606060", weight: "25 кг", price: 870, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/perel-sl/" },
+  { id: "sl-0025", series: "SL", name: "Perel SL 0025", color: "Антрацит", hex: "#3C3C3C", weight: "25 кг", price: 900, tag: "Популярный", url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/perel-sl/" },
+  { id: "sl-0030", series: "SL", name: "Perel SL 0030", color: "Чёрный", hex: "#1E1E1E", weight: "25 кг", price: 930, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/perel-sl/" },
+  { id: "sl-0035", series: "SL", name: "Perel SL 0035", color: "Кремовый", hex: "#EDE0C4", weight: "25 кг", price: 870, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/perel-sl/" },
+  { id: "sl-0040", series: "SL", name: "Perel SL 0040", color: "Бежевый", hex: "#D6C49A", weight: "25 кг", price: 870, tag: "Популярный", url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/perel-sl/" },
+  { id: "sl-0045", series: "SL", name: "Perel SL 0045", color: "Жёлто-бежевый", hex: "#C8A85C", weight: "25 кг", price: 870, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/perel-sl/" },
+  { id: "sl-0050", series: "SL", name: "Perel SL 0050", color: "Песочный", hex: "#C4A46E", weight: "25 кг", price: 870, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/perel-sl/" },
+  { id: "sl-0055", series: "SL", name: "Perel SL 0055", color: "Терракот", hex: "#B05A3C", weight: "25 кг", price: 900, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/perel-sl/" },
+  { id: "sl-0060", series: "SL", name: "Perel SL 0060", color: "Красно-коричневый", hex: "#8C3A28", weight: "25 кг", price: 900, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/perel-sl/" },
+  { id: "sl-0065", series: "SL", name: "Perel SL 0065", color: "Коричневый", hex: "#6E3E22", weight: "25 кг", price: 900, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/perel-sl/" },
+  { id: "sl-0070", series: "SL", name: "Perel SL 0070", color: "Тёмно-коричневый", hex: "#3E2010", weight: "25 кг", price: 930, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/perel-sl/" },
 
   // Серия RL — расширенная линейка
   { id: "rl-00", series: "RL", name: "Perel RL Белый", color: "Белый", hex: "#FAFAF8", weight: "25 кг", price: 1050, url: "https://perelshop.ru/tsvetnyye-kladochnyye-smesi/" },
@@ -50,7 +54,7 @@ const PRODUCTS: Product[] = [
 const SERIES = ["Все", "SL", "RL", "GL"];
 
 const SERIES_DESC: Record<string, string> = {
-  SL: "Стандартная линейка — оптимальное соотношение цены и качества",
+  SL: "14 цветов · Для кирпича с водопоглощением 5–12% · Мешок 25 кг",
   RL: "Расширенная линейка — улучшенный состав, больше цветов",
   GL: "Премиум линейка — максимальная стойкость и насыщенность цвета",
 };
