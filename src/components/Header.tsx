@@ -10,7 +10,7 @@ export default function Header({ className }: HeaderProps) {
       <div className="flex justify-between items-center">
         <Link to="/" className="hover:opacity-80 transition-opacity">
           <img
-            src="https://perelshop.ru/image/catalog/logoot.jpg"
+            src="https://td-perel.ru/perel-logo.png"
             alt="Perel"
             className="h-8 w-auto object-contain"
           />
