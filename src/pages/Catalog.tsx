@@ -173,7 +173,9 @@ export default function Catalog() {
 
                 {/* Info */}
                 <div className="p-3 flex flex-col gap-1 flex-1">
-                  <p className="text-xs text-neutral-500 uppercase tracking-wide">{product.series}</p>
+                  <p className="text-xs text-neutral-400 font-mono tracking-wide">
+                    {product.series} {product.id.split("-")[1]}
+                  </p>
                   <p className="text-sm font-semibold text-neutral-900 leading-tight">{product.color}</p>
                   <p className="text-xs text-neutral-400">{product.weight}</p>
                   <div className="mt-auto pt-2 flex items-center justify-between">
