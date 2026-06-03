@@ -36,6 +36,14 @@ export default function Footer() {
                   +7 938 173-64-70
                 </a>
                 <a
+                  href="https://yandex.ru/maps/?text=Ростов-на-Дону+ул.+Доватора+144/21"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
+                >
+                  Ростов-на-Дону,<br />ул. Доватора 144/21
+                </a>
+                <a
                   href="https://perelshop.ru/"
                   target="_blank"
                   rel="noopener noreferrer"
